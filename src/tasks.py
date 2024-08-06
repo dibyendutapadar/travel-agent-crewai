@@ -30,8 +30,7 @@ finding_recommendations_task = Task(
     * **Dates**: <users desired checkin to checkout dates>
     * **travel_distance_range**: <the distance from the current location user is willing to travel>,
     * **amenities**: <amaenities user wants comma separated>
-    * **stay_type**: <type of stay user is looking for>
-    * **travel_distance_range**: <the distance from the current location user is willing to travel>,
+    * **Travel Distance Range**: <the distance from the current location user is willing to travel>,
     * **stay_budget**: <max budget user is lokking for in INR>
     
     Based on these criteria, below are suitable stay recommendations that match the user's intent. Here are my top 5 findings:

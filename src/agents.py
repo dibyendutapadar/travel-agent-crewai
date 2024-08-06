@@ -1,8 +1,17 @@
-from langchain_community.llms import Ollama
+# from langchain_community.llms import Ollama
 from crewai import Agent
+import streamlit as st
 
-# Initialize LLM
-llm = Ollama(model="llama3.1:latest")
+# # Initialize LLM
+# llm = Ollama(model="llama3.1:latest")
+from langchain_groq import ChatGroq
+
+GROQ_API_KEY = st.secrets["groq"]["api_key"]
+
+llm=ChatGroq(temperature=0,
+             model_name="llama3-70b-8192",
+             api_key=GROQ_API_KEY)
+
 
 # Define Agents
 intent_mapper_agent = Agent(
